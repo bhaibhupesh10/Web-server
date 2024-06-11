@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header styles */
+        .header {
+            background-color: 	#4682B4;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-right: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .header a:hover {
+            background-color: #555;
+        }
+
+        /* Main content styles */
+        .content {
+            padding: 100px 20px 20px 20px; /* Adjust for the fixed header */
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        /* Button styles */
+        .btn {
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <a href="#">Home</a>
+        <a href="#">Source Code</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="content">
+        <h1>Welcome to Menu Page</h1>
+
+        <button class="btn" onclick="goToGoogleSearch()">Go to Google Search</button>
+        <button class="btn" onclick="sendBulkEmail()">Send Bulk Email</button>
+        <button class="btn" onclick="geoCoordinates()">Geo Coordinates</button>
+        <button class="btn" onclick="textToSpeak()">Text To Speak</button>
+        <button class="btn" onclick="dockerAutomation()">Docker Automation</button>
+        <button class="btn" onclick="htmlInterpreter()">Live HTML Interpreter</button>
+    </div>
+
+    <!-- JavaScript to handle button clicks -->
+    <script>
+        // Functions to handle button clicks
+        function goToGoogleSearch() {
+            window.location.href = "google_search.html";
+        }
+        function sendBulkEmail() {
+            window.location.href = "send_bulk_email.html";
+        }
+        function geoCoordinates() {
+            window.location.href = "geo_coordinates.html";
+        }
+        function textToSpeak() {
+            window.location.href = "text_to_speak.html";
+        }
+        function dockerAutomation() {
+            window.location.href = "docker.html";
+        }
+        function htmlInterpreter() {
+            window.location.href = "html_live_interpreter.html";
+        }
+    </script>
+</body>
+</html>
+
